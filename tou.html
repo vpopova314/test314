@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teach-Out Process Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .section-header {
+            background-color: #e6e6e6;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .section-header:hover {
+            background-color: #d9d9d9;
+        }
+        .section-content {
+            display: none;
+        }
+        .section-content.show {
+            display: table-row-group;
+        }
+        .grey-row {
+            background-color: #f9f9f9;
+        }
+        .blue-row {
+            background-color: #e6f3ff;
+        }
+        .chevron::before {
+            content: '\25B6';
+            display: inline-block;
+            margin-right: 5px;
+            transition: transform 0.3s;
+        }
+        .chevron.down::before {
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Teach-Out Process Table</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Section/Task</th>
+                <th>Questions for PC</th>
+                <th>Considerations</th>
+                <th>Sequence/Contingencies</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header" data-section="preparation">
+                <td colspan="4"><span class="chevron"></span>Preparation</td>
+            </tr>
+            <tbody class="section-content" id="preparation">
+                <tr class="grey-row">
+                    <td title="Teach-Out Plans and Agreements Form, Section B, Question 2a: 'List the name(s) of each institution, including city and state, with which the institution is entering into a teach-out agreement to support student completion or transfer.'">Name, city, and state of teach-out institution</td>
+                    <td>N/A (This is information about the teach-out institution itself)</td>
+                    <td></td>
+                    <td>0 - No contingencies</td>
+                </tr>
+                <tr class="grey-row">
+                    <td title="Teach-Out Plans and Agreements Form, Section B, Question 2a: 'Also provide information regarding the teach-out institution's accreditation status with other accreditors.'">Accrediting agencies and status</td>
+                    <td>N/A (This is information about the teach-out institution itself)</td>
+                    <td></td>
+                    <td>0 - No contingencies</td>
+                </tr>
+                <tr class="grey-row">
+                    <td title="Teach-Out Plans and Agreements Form, Section B, Question 2b: 'Verify that each teach-out institution is not subject to any of the following conditions...'">Verification of not being subject to certain conditions</td>
+                    <td>N/A (This is information about the teach-out institution itself)</td>
+                    <td></td>
+                    <td>0 - No contingencies</td>
+                </tr>
+            </tbody>
+
+            <tr class="section-header" data-section="programDetails">
+                <td colspan="4"><span class="chevron"></span>Program Details</td>
+            </tr>
+            <tbody class="section-content" id="programDetails">
+                <tr>
+                    <td title="Teach-Out Plans and Agreements Form, Section A, Question 2: 'Provide an inventory of all the academic programs included in the teach-out plan, including the following information...'">Academic program(s) covered</td>
+                    <td>What specific academic programs do you need us to cover in the teach-out agreement?</td>
+                    <td>Assess alignment of program learning outcomes and ensure no substantive changes to degree requirements.</td>
+                    <td>1 - Foundation for subsequent tasks</td>
+                </tr>
+                <tr>
+                    <td title="Teach-Out Plans and Agreements Form, Section B, Question 3: 'Describe any specific branch campuses, additional locations, or sites that the teach-out institution will acquire or use during the teach-out process.'">Branch campuses, additional locations, or sites</td>
+                    <td>Do you have any specific branch campuses, additional locations, or sites that we need to consider in this teach-out process?</td>
+                    <td>Evaluate capacity at each location and potential impact on student-to-faculty ratios.</td>
+                    <td>2 - Builds on program information (1)</td>
+                </tr>
+                <tr>
+                    <td title="Teach-Out Plans and Agreements Procedures, Section IV, Part D: 'Information on the specific locations where instruction will be offered by the teach-out institution'">Specific locations for instruction</td>
+                    <td>Where are your current instructional locations, and what are the specific needs of your students regarding instruction locations?</td>
+                    <td>Consider ADA compliance and availability of necessary specialized facilities or equipment.</td>
+                    <td>3 - Depends on programs (1) and branch campuses (2)</td>
+                </tr>
+            </tbody>
+
+            <tr class="section-header" data-section="logistics">
+                <td colspan="4"><span class="chevron"></span>Logistics</td>
+            </tr>
+            <tbody class="section-content" id="logistics">
+                <tr>
+                    <td title="Teach-Out Plans and Agreements Form, Section B, Question 4: 'Describe how the teach-out institution(s) can provide students access to program(s) and services without requiring them to move or travel for substantial distances or durations.'">Access to programs and services without substantial travel</td>
+                    <td>What are the current locations of your students? How can we ensure they have access to our programs and services without substantial travel?</td>
+                    <td>Evaluate impact on clinical placements, internships, or other experiential learning components.</td>
+                    <td>4 - Builds on location information (2-3)</td>
+                </tr>
+                <tr>
+                    <td title="Teach-Out Plans and Agreements Form, Section B, Question 7: 'Describe how the institution and the teach-out institution(s) will provide information on the number and types of credits each teach-out institution is willing to accept prior to the student's enrollment.'">Number and types of credits to accept</td>
+                    <td>Can you provide a detailed list of the courses and credits your students have completed or are currently enrolled in?</td>
+                    <td>Scrutinize any discrepancies in credit hour definitions or course equivalencies.</td>
+                    <td>5 - Depends on program information (1)</td>
+                </tr>
+                <tr>
+                    <td title="Teach-Out Plans and Agreements Form, Section B, Question 6: 'Describe how the teach-out institution(s) has/have the necessary experience, resources and support services to ensure, insofar as possible without additional charge to students, an educational program that is of acceptable quality and is reasonably similar in content, delivery modality, structure, and scheduling to the program(s) slated for closure.'">Experience, resources, and support services</td>
+                    <td>What specific support services are your students currently receiving that we need to match or exceed?</td>
+                    <td>Assess adequacy of library resources, technology infrastructure, and specialized academic support services.</td>
+                    <td>6 - Informed by programs (1) and locations (2-4)</td>
+                </tr>
+                <tr>
+                    <td title="Teach-Out Plans and Agreements Form, Section B, Question 9: 'Describe how the teach-out institution(s) has/have the resources to remain stable, carry out its mission, and meet all of its obligations to students.'">Resources to remain stable and meet obligations</td>
+                    <td>What are the specific obligations to students that we need to be prepared to meet?</td>
+                    <td>Evaluate financial projections and contingency plans for potential enrollment fluctuations.</td>
+                    <td>7 - Builds on programs (1), locations (2-4), and support services (6)</td>
+                </tr>
+                <tr>
+                    <td title="Teach-Out Plans and Agreements Procedures, Section IV, Part D: 'The teach-out agreement should include a comprehensive description of the arrangements being made for students between the two institutions'">Comprehensive description of arrangements</td>
+                    <td>What are the current tuition and fees for your programs? Are there any specific financial arrangements or scholarships we need to be aware of?</td>
+                    <td>Scrutinize any changes in total cost of attendance and impact on financial aid eligibility.</td>
+                    <td>8 - Integrates information from 1-7</td>
+                </tr>
+            </tbody>
+
+            <tr class="section-header" data-section="financialAndCompliance">
+                <td colspan="4"><span class="chevron"></span>Financial and Compliance</td>
+            </tr>
+            <tbody class="section-content" id="financialAndCompliance">
+                <tr class="blue-row">
+                    <td title="Teach-Out Plans and Agreements Procedures, Section IV, Part D: 'Any additional financial charges or changes in tuition and fees.'">Financial considerations</td>
+                    <td>Are there any specific financial arrangements or considerations we need to discuss?</td>
+                    <td>Analyze potential hidden costs and long-term financial implications for students.</td>
+                    <td>9 - Builds on comprehensive arrangements (8)</td>
+                </tr>
+                <tr class="blue-row">
+                    <td title="Teach-Out Plans and Agreements Form, Section B, Question 5: 'Describe how the teach-out institution(s) operate(s) in a manner that is consistent with the Commission's standards for accreditation, requirements of affiliation, policies and procedures, and federal compliance requirements.'">Consistency with MSCHE standards and federal compliance</td>
+                    <td>Can you provide us with the specific MSCHE standards, requirements, policies, and federal compliance regulations we need to adhere to?</td>
+                    <td>Assess potential changes in institutional effectiveness metrics and student achievement indicators.</td>
+                    <td>10 - Overarching consideration, informed by all previous sequences</td>
+                </tr>
+                <tr class="blue-row">
+                    <td title="Teach-Out Plans and Agreements Form, Section A, Question 6: 'Summarize the state and/or federal requirements for this type of teach-out.'">Regulatory compliance</td>
+                    <td>Are there any specific state or federal regulations, beyond MSCHE standards, that we need to be aware of and comply with?</td>
+                    <td>Evaluate implications for specialized program accreditations and licensure requirements.</td>
+                    <td>11 - Builds on MSCHE standards (10), may require additional research</td>
+                </tr>
+            </tbody>
+
+            <tr class="section-header" data-section="finalization">
+                <td colspan="4"><span class="chevron"></span>Finalization</td>
+            </tr>
+            <tbody class="section-content" id="finalization">
+                <tr class="blue-row">
+                    <td title="Teach-Out Plans and Agreements Form, Section A, Question 5: 'Provide a description of the institution's plan for the disposition of all records related to the teach-out as applicable'">Student records transfer</td>
+                    <td>What is the plan for transferring and maintaining student records? How will we ensure continuity of access to these records?</td>
+                    <td>Assess data migration processes and long-term accessibility of historical student records.</td>
+                    <td>12 - Can be addressed after most other details are finalized (1-11)</td>
+                </tr>
+                <tr class="blue-row">
+                    <td title="Teach-Out Plans and Agreements Form, Section A, Question 4a: 'Describe the institution's plan for notifying all relevant stakeholders (current and prospective students, faculty, staff, public) about the teach-out plan and how it will continually notify stakeholders of pertinent information as it becomes available.'">Communication plan</td>
+                    <td>How do you plan to communicate this change to your students? How can we collaborate on this communication?</td>
+                    <td>Evaluate mechanisms for ongoing communication and addressing student grievances during the transition.</td>
+                    <td>13 - Depends on having a clear understanding of all arrangements (1-12)</td>
+                </tr>
+                <tr>
+                    <td title="Teach-Out Plans and Agreements Procedures, Section IV, Part F: 'If teach-out agreements are required or the institution elects to enter into agreements with other institutions, the Commission will require the institution to submit signed copies of any teach-out agreements and any other documentation supporting the agreement in its submission.'">Signed teach-out agreement</td>
+                    <td>Can you provide a draft of the teach-out agreement for our review and signature?</td>
+                    <td>Scrutinize legal language for potential loopholes or ambiguities that could impact student protections.</td>
+                    <td>14 - Final step, incorporates all previous information (1-13)</td>
+                </tr>
+            </tbody>
+        </tbody>
+    </table>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sectionHeaders = document.querySelectorAll('.section-header');
+            
+            sectionHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const sectionId = this.getAttribute('data-section');
+                    const content = document.getElementById(sectionId);
+                    content.classList.toggle('show');
+                    this.querySelector('.chevron').classList.toggle('down');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
